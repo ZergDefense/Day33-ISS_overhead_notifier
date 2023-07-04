@@ -99,13 +99,14 @@ while True:
                                 hover_data=["DateTime"],
                                 color="Latitude",
                                 color_continuous_scale=color_scale,
-                                zoom=1,
+                                zoom=0,
+                                center=dict(lat=0, lon=0),
                                 height=800,
-                                width=800)
+                                width=900)
 
         fig.update_layout(mapbox_style="open-street-map")
         fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
-        # fig.show()
+        fig.show()
         # fig.show(renderer="png")
         img = fig.to_image()
 
