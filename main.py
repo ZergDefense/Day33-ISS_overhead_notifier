@@ -41,7 +41,7 @@ def send_simple_email():
         connection.sendmail(
             from_addr=my_email,
             to_addrs="szabo.gergo.bme@gmail.com",
-            msg=f"Subject:ISS position such wow\n\n{img}")
+            msg=f"Subject:ISS position such wow\n\n")
 
 
 def send_email_with_img():
